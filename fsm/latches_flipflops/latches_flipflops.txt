@@ -1,0 +1,7 @@
+Latches and Flip‑Flops
+
+This project introduces storage elements, focusing on SR latches, D latches, and edge‑triggered D flip‑flops. These illustrate the difference between level‑sensitive and edge‑sensitive behavior.
+
+Students learn how memory elements hold values between clock edges and how improper coding can accidentally infer unintended latches. Hierarchical construction of flip‑flops from gated latches reinforces timing concepts.
+
+Simulation tests how Q responds when data changes at various times relative to enable or clock edges. FPGA notes emphasize using proper clock pins and ensuring no raw mechanical input directly drives a storage element without debouncing.
