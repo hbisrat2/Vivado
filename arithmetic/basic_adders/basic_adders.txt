@@ -1,0 +1,7 @@
+Basic Adders (Half, Full, 2-bit, Add/Sub)
+
+This project groups the simplest arithmetic building blocks used in early labs. Half adders and full adders demonstrate how binary addition is constructed from logic gates, while the 2‑bit adder chains these units together to show carry propagation. The synchronous add/sub module extends these ideas by using 2’s‑complement subtraction and registering outputs on a clock edge.
+
+In practice, these modules teach structural hierarchy: small combinational elements feeding progressively larger designs. Their behavior is simple—add or subtract binary values—but the lab emphasizes correct carry handling, modular reuse, and understanding how synchronous logic differs from pure combinational designs.
+
+Simulation verifies correctness by sweeping all input combinations and checking sum/carry results. FPGA implementations map inputs to switches and outputs to LEDs, mainly to observe carry behavior and confirm the synchronous module clocks correctly.
