@@ -1,0 +1,7 @@
+Multiplexers (2:1, 4:1, 8:1)
+
+This project implements several levels of multiplexers that are reused in many later designs. Multiplexers select one input from multiple sources based on a select signal, forming the backbone of datapath routing and ALU operation.
+
+The lab illustrates hierarchical construction—building a 4:1 mux from two 2:1 muxes, or an 8:1 from two 4:1s and a final stage. Both structural and behavioral implementations are typically explored.
+
+Simulation cycles through all select values with distinct data patterns to verify bit ordering and pass‑through correctness. On the FPGA, muxes usually appear internally, though they may be demonstrated with switches selecting visible LED outputs.
