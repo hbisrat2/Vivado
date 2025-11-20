@@ -1,0 +1,7 @@
+4‑Bit ALU
+
+This project integrates arithmetic and logic functions—addition, subtraction, bitwise operations—into a single 4‑bit module. Students learn how multiplexers and previously built adders combine to form a configurable datapath.
+
+Inputs typically include the operands and an opcode, while outputs include the 4‑bit result and optional flags such as carry, zero, or overflow. The ALU is mostly structural: each operation is computed in parallel, then a multiplexer selects the active result.
+
+Simulation checks each operation with directed tests, including edge cases. On the FPGA the ALU is often driven from switches with the result displayed on LEDs, providing a hands‑on view of multi‑function datapath behavior.
