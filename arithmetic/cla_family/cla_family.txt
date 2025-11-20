@@ -1,0 +1,7 @@
+Carry‑Lookahead Adders (4‑bit and 16‑bit)
+
+This project implements faster adders that reduce delay by computing carry bits in parallel rather than letting them ripple. The 4‑bit CLA generates propagate and generate signals, then uses lookahead equations to determine each internal carry at once. The 16‑bit version chains four of these blocks with a group lookahead unit to scale performance.
+
+The design highlights structural hierarchy and the trade‑off between area and speed. Unlike ripple‑carry adders, CLAs require more logic but drastically reduce worst‑case delay. Students compare gate count and estimated propagation time across multiple implementations.
+
+Simulation compares CLA outputs to a behavioral reference model for many random operands. FPGA usage does not change functionality but provides insight into how synthesis maps lookahead logic into real hardware.
