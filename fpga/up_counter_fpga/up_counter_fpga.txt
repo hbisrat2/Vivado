@@ -1,0 +1,7 @@
+Up‑Counter FPGA Demo
+
+This project implements a visible binary up‑counter, typically clock‑enabled by the clock‑divider module so human observers can see the count progression.
+
+The design is a simple synchronous register incremented each clock cycle (or enable pulse). It may include reset and optional enable signals. Display is done through LEDs or a seven‑segment module.
+
+Simulation validates counting, rollover, and reset behavior. On the FPGA, the counter provides a foundational example of clean synchronous design and the importance of correct clock handling.
