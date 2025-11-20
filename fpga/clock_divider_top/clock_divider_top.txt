@@ -1,0 +1,7 @@
+Clock Divider + Top‑Level Demo
+
+This project creates a slower derived clock (or clock‑enable pulse) from the board’s high‑frequency system clock. It forms the foundation for visible sequential demos like blinking LEDs or slow counters.
+
+The divider is a synchronous counter whose output toggles at a programmed rate. The top‑level module often instantiates both the divider and a simple sequential circuit that consumes the divided clock.
+
+Simulation confirms the expected division ratio by counting input cycles. FPGA implementation requires proper constraint mapping for the primary clock pin and reset input.
