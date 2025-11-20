@@ -1,0 +1,7 @@
+Combination‑Lock FSM
+
+This project builds a multi‑state digital lock that progresses through states when correct passwords and key‑press sequences are entered. Incorrect entries reset the system to the locked state.
+
+The FSM includes a state register and next‑state logic, with transitions dependent on key inputs and comparisons between entered codes and predefined values. Outputs represent the lock status or current state.
+
+Simulation walks through correct and incorrect sequences, testing branching behavior and validating reset handling. FPGA use maps key inputs to buttons or switches and outputs to LEDs, frequently integrating the debouncer module.
