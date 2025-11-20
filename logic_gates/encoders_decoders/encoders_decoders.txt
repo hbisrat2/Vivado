@@ -1,0 +1,7 @@
+Encoders and Decoders
+
+This project covers one‑hot to binary encoders and binary to one‑hot decoders, reinforcing how data representations are transformed. Decoders assert one of many outputs based on a binary index, while encoders compress one‑hot patterns back to binary.
+
+The implementation emphasizes correctness of enable behavior and active‑high versus active‑low conventions. Priority logic may be included in encoders depending on the specification.
+
+Simulation sweeps all valid input patterns and checks that exactly the expected output is active. On the FPGA, decoders can visibly illuminate LEDs, while encoders are often used internally for control logic or keypad interfaces.
