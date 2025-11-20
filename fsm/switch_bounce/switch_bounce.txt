@@ -1,0 +1,7 @@
+Switch Bounce and Debouncing
+
+Mechanical switch contacts physically bounce when pressed, causing rapid unintended toggles. This project models bounce behavior and implements digital filtering to produce clean, stable button signals.
+
+The design usually contains two parts: a synchronizer to safely bring the asynchronous input into the FPGA clock domain, and a counter‑based or shift‑register‑based filter requiring stability for a defined time before accepting a change.
+
+Simulation uses noisy input patterns to confirm that the debounced output changes exactly once per press. On the FPGA, the cleaned signal feeds counters, FSMs, or LEDs and demonstrates the difference between raw and filtered inputs.
